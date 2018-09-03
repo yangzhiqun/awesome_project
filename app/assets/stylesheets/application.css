@@ -13,3 +13,122 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+  margin: 0; 
+  padding: 0;
+  background-color: aliceblue;
+}
+
+.banner{
+  height: 3em;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  background-color: #0D1B1E;
+  box-shadow: 10px 5px 5px #888888;
+}
+
+.banner a{
+  color: white;
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.banner a:hover{
+  color: red;
+}
+
+#avatar{
+  margin-left: 8em;
+  position: absolute;
+}
+
+#link{
+  font-family: "黑体", "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-size: 1.3em;
+  padding-top: 0.6em;
+  text-align: center;
+  word-spacing: 1.2em;
+}
+
+.audio-container{
+  position: relative;
+  float: right;
+  top: -40px;
+  right: 110px;
+}
+
+#i18n{
+  text-align: right;
+  margin-right: 1%;
+  margin-top: -1.7em;
+}
+
+.contact{
+  word-spacing: 0.6em;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#flash_notice { padding-top: 50px; text-align: center; background: #feffcf; }
+#flash_alert { padding-top: 50px; text-align: center; background: #FFE6DF; }
+#flash_success { padding-top: 50px; text-align: center; background: #bcffbc; }
+.flash-notice {
+  text-align: center;
+  display: none;
+  margin-left: 15%;
+  margin-top: 9%;
+  position: fixed;
+  z-index: 99;
+  padding: 13px;
+}
+
+@media only screen and (min-width: 1800px){
+  #link{
+    font-size: 1.6em;
+    padding-top: 0.5em;
+  }
+}
+
+@media only screen and (max-device-width: 400px){
+  .banner{ height: 3.5em !important; }
+
+  #avatar{
+    margin-left: 0.5em !important;
+    margin-top: 0.2em;
+  }
+
+  #avatar img{
+    height: 50px;
+    width: 40px;
+  }
+
+  #link{
+    margin-left: 0.1em;
+    font-size: 1.5em !important;
+    /* padding-top: 0.4em !important; */
+    word-spacing: 0.5em !important;
+  }
+
+  #i18n{
+    /* margin-right: 1%; */
+    margin-top: -2em;
+  }
+
+  #set_locale{
+    height: 30px;
+    width: 40px;
+    font-size: 1em;
+  }
+
+  .contact{ word-spacing: 0.5em; }
+  .contact img{
+    height: 50px;
+    width: 50px;
+  }
+}
